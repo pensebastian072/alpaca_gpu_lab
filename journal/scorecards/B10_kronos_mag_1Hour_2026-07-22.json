@@ -1,0 +1,179 @@
+{
+  "battery_id": "B10_kronos_mag_1Hour",
+  "dataset_family": "kronos_core7_1hour",
+  "symbols": [
+    "SPY",
+    "QQQ",
+    "IWM",
+    "BND"
+  ],
+  "timeframe": "1Hour",
+  "feed": "iex",
+  "mode": "magnitude",
+  "accept": "rank",
+  "q": 0.1,
+  "threshold": 0.6,
+  "run_at": "2026-07-22T13:35:00+00:00",
+  "combos": [
+    {
+      "params": {
+        "model": "kronos-mag"
+      },
+      "horizons": {
+        "5": {
+          "passes": false,
+          "deflated_sharpe": {
+            "sr": -0.0232,
+            "ratio": -16.2698,
+            "prob": 0.0,
+            "n": 105,
+            "n_trials": 10
+          },
+          "pbo": 0.2579,
+          "profit_factor": 0.9506,
+          "sharpe": -0.02315722462833086,
+          "n_trades": 105,
+          "thresholds": {
+            "deflated_sharpe_min": 0.0,
+            "pbo_max": 0.5
+          },
+          "reasons": [
+            "deflated_sharpe_ratio -16.2698 <= 0.0"
+          ],
+          "bootstrap": {
+            "device": "cuda",
+            "n_boot": 10000,
+            "n_perm": 10000,
+            "sharpe_ci": [
+              -0.2237,
+              0.173
+            ],
+            "sharpe_prob_positive": 0.4078,
+            "mean": -0.000137,
+            "perm_p_value": 0.5966
+          },
+          "metrics": {
+            "n_trades": 105,
+            "expectancy": -0.00013705659834325744,
+            "profit_factor_after_cost": 0.9505693927030999,
+            "max_drawdown": 0.07981787229267975,
+            "sortino": -0.061432026550025186,
+            "precision_accepted": 0.37037037037037035,
+            "pct_stamps_traded": 0.11170212765957446,
+            "regime_breakdown": "unknown (regime tags land in P6)"
+          },
+          "ic": {
+            "ic_mean": 0.04065,
+            "ic_std": 0.17328,
+            "ic_t": 1.049,
+            "ic_hit_rate": 0.5,
+            "n_folds": 20
+          }
+        },
+        "15": {
+          "passes": false,
+          "deflated_sharpe": {
+            "sr": -0.0503,
+            "ratio": -17.9088,
+            "prob": 0.0,
+            "n": 108,
+            "n_trials": 11
+          },
+          "pbo": 0.0159,
+          "profit_factor": 0.8855,
+          "sharpe": -0.050291486704673566,
+          "n_trades": 108,
+          "thresholds": {
+            "deflated_sharpe_min": 0.0,
+            "pbo_max": 0.5
+          },
+          "reasons": [
+            "deflated_sharpe_ratio -17.9088 <= 0.0"
+          ],
+          "bootstrap": {
+            "device": "cuda",
+            "n_boot": 10000,
+            "n_perm": 10000,
+            "sharpe_ci": [
+              -0.2274,
+              0.1469
+            ],
+            "sharpe_prob_positive": 0.3024,
+            "mean": -0.000369,
+            "perm_p_value": 0.6965
+          },
+          "metrics": {
+            "n_trades": 108,
+            "expectancy": -0.0003686783740320491,
+            "profit_factor_after_cost": 0.8854649479919764,
+            "max_drawdown": 0.09263478257458671,
+            "sortino": -0.0726202845830433,
+            "precision_accepted": 0.4166666666666667,
+            "pct_stamps_traded": 0.1148936170212766,
+            "regime_breakdown": "unknown (regime tags land in P6)"
+          },
+          "ic": {
+            "ic_mean": -0.02791,
+            "ic_std": 0.19735,
+            "ic_t": -0.632,
+            "ic_hit_rate": 0.45,
+            "n_folds": 20
+          }
+        },
+        "30": {
+          "passes": false,
+          "deflated_sharpe": {
+            "sr": -0.1187,
+            "ratio": -18.79,
+            "prob": 0.0,
+            "n": 108,
+            "n_trials": 12
+          },
+          "pbo": 0.0794,
+          "profit_factor": 0.7389,
+          "sharpe": -0.11868362627580507,
+          "n_trades": 108,
+          "thresholds": {
+            "deflated_sharpe_min": 0.0,
+            "pbo_max": 0.5
+          },
+          "reasons": [
+            "deflated_sharpe_ratio -18.79 <= 0.0"
+          ],
+          "bootstrap": {
+            "device": "cuda",
+            "n_boot": 10000,
+            "n_perm": 10000,
+            "sharpe_ci": [
+              -0.3092,
+              0.0701
+            ],
+            "sharpe_prob_positive": 0.1049,
+            "mean": -0.001008,
+            "perm_p_value": 0.8889
+          },
+          "metrics": {
+            "n_trades": 108,
+            "expectancy": -0.0010080880381718583,
+            "profit_factor_after_cost": 0.7388954657487952,
+            "max_drawdown": 0.17655293235771655,
+            "sortino": -0.18162376685671558,
+            "precision_accepted": 0.3611111111111111,
+            "pct_stamps_traded": 0.1148936170212766,
+            "regime_breakdown": "unknown (regime tags land in P6)"
+          },
+          "ic": {
+            "ic_mean": -0.01444,
+            "ic_std": 0.15477,
+            "ic_t": -0.417,
+            "ic_hit_rate": 0.4,
+            "n_folds": 20
+          }
+        }
+      },
+      "all_pass": false
+    }
+  ],
+  "promoted": false,
+  "status": "FAIL->SHADOW"
+}

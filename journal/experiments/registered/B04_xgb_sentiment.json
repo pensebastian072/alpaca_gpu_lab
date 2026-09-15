@@ -1,0 +1,29 @@
+{
+  "battery_id": "B04_xgb_sentiment",
+  "registered_at": "2026-07-17T15:23:37+00:00",
+  "hypothesis": "Trailing-60m news sentiment (FinBERT-scored Alpaca news) adds intraday triple-barrier signal beyond price+cross-asset features.",
+  "dataset_family": "intraday_core7_1min",
+  "horizons": [
+    5,
+    15,
+    30
+  ],
+  "model": "xgboost-cuda",
+  "param_grid": {
+    "max_depth": [
+      4,
+      6,
+      8
+    ],
+    "learning_rate": [
+      0.05,
+      0.1
+    ],
+    "min_child_weight": [
+      5,
+      50
+    ]
+  },
+  "n_trials": 36,
+  "feed": "iex"
+}

@@ -1,0 +1,23 @@
+{
+  "battery_id": "B06_direction_rank",
+  "registered_at": "2026-07-18T10:41:37+00:00",
+  "hypothesis": "Chart-only features RANK intraday triple-barrier direction even if they never reach 60% confidence: trading the top decile of each fold's predicted p_up yields positive rank-IC and net-positive after-cost expectancy. Tests whether the B01-B05 FAILs were a vacuous-threshold artifact or a real absence of signal.",
+  "dataset_family": "intraday_core7_1min",
+  "horizons": [
+    5,
+    15,
+    30
+  ],
+  "model": "logreg+xgb",
+  "param_grid": {
+    "accept": "rank",
+    "q": 0.1,
+    "xgb": {
+      "max_depth": 6,
+      "learning_rate": 0.05,
+      "min_child_weight": 50
+    }
+  },
+  "n_trials": 6,
+  "feed": "iex"
+}

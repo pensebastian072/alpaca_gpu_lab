@@ -1,0 +1,134 @@
+{
+  "battery_id": "B09_kronos_dir_4Hour",
+  "dataset_family": "kronos_core7_4hour",
+  "symbols": [
+    "SPY",
+    "QQQ",
+    "IWM",
+    "BND",
+    "IEF",
+    "TLT",
+    "VIXY"
+  ],
+  "timeframe": "4Hour",
+  "feed": "iex",
+  "mode": "xsect",
+  "accept": "rank",
+  "q": 0.34,
+  "threshold": 0.6,
+  "run_at": "2026-07-21T22:55:24+00:00",
+  "combos": [
+    {
+      "params": {
+        "model": "kronos"
+      },
+      "horizons": {
+        "5": {
+          "passes": false,
+          "deflated_sharpe": null,
+          "pbo": null,
+          "profit_factor": 0.0,
+          "sharpe": -0.8710030379696255,
+          "n_trades": 2,
+          "thresholds": {
+            "deflated_sharpe_min": 0.0,
+            "pbo_max": 0.5
+          },
+          "reasons": [
+            "insufficient PnL for Deflated Sharpe (need >=8 trades)",
+            "insufficient PnL for PBO (need >=40 trades)"
+          ],
+          "bootstrap": null,
+          "metrics": {
+            "n_trades": 2,
+            "expectancy": -0.02092081445759452,
+            "profit_factor_after_cost": 0.0,
+            "max_drawdown": 0.003936660412167947,
+            "sortino": -0.8710030379696255,
+            "precision_accepted": null,
+            "pct_stamps_traded": 1.0,
+            "regime_breakdown": "unknown (regime tags land in P6)"
+          },
+          "ic": {
+            "ic_mean": 0.07328,
+            "ic_std": 0.27138,
+            "ic_t": 1.146,
+            "ic_hit_rate": 0.556,
+            "n_folds": 18
+          }
+        },
+        "15": {
+          "passes": false,
+          "deflated_sharpe": null,
+          "pbo": null,
+          "profit_factor": 0.0,
+          "sharpe": -1.4153708080334755,
+          "n_trades": 2,
+          "thresholds": {
+            "deflated_sharpe_min": 0.0,
+            "pbo_max": 0.5
+          },
+          "reasons": [
+            "insufficient PnL for Deflated Sharpe (need >=8 trades)",
+            "insufficient PnL for PBO (need >=40 trades)"
+          ],
+          "bootstrap": null,
+          "metrics": {
+            "n_trades": 2,
+            "expectancy": -0.05627455557967486,
+            "profit_factor_after_cost": 0.0,
+            "max_drawdown": 0.0843888275660632,
+            "sortino": -1.4153708080334755,
+            "precision_accepted": null,
+            "pct_stamps_traded": 1.0,
+            "regime_breakdown": "unknown (regime tags land in P6)"
+          },
+          "ic": {
+            "ic_mean": 0.02989,
+            "ic_std": 0.34194,
+            "ic_t": 0.371,
+            "ic_hit_rate": 0.611,
+            "n_folds": 18
+          }
+        },
+        "30": {
+          "passes": false,
+          "deflated_sharpe": null,
+          "pbo": null,
+          "profit_factor": 2.3898,
+          "sharpe": 0.2899151347642232,
+          "n_trades": 2,
+          "thresholds": {
+            "deflated_sharpe_min": 0.0,
+            "pbo_max": 0.5
+          },
+          "reasons": [
+            "insufficient PnL for Deflated Sharpe (need >=8 trades)",
+            "insufficient PnL for PBO (need >=40 trades)"
+          ],
+          "bootstrap": null,
+          "metrics": {
+            "n_trades": 2,
+            "expectancy": 0.0055466013773284835,
+            "profit_factor_after_cost": 2.3898415140879465,
+            "max_drawdown": 0.007981631461006286,
+            "sortino": null,
+            "precision_accepted": null,
+            "pct_stamps_traded": 1.0,
+            "regime_breakdown": "unknown (regime tags land in P6)"
+          },
+          "ic": {
+            "ic_mean": 0.13711,
+            "ic_std": 0.32225,
+            "ic_t": 1.805,
+            "ic_hit_rate": 0.667,
+            "n_folds": 18
+          }
+        }
+      },
+      "all_pass": false
+    }
+  ],
+  "promoted": false,
+  "status": "FAIL->SHADOW"
+}

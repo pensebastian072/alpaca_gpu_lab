@@ -1,0 +1,526 @@
+{
+  "as_of": "2026-09-14T22:12:58+00:00",
+  "feed": "iex",
+  "timeframes": {
+    "1Min": {
+      "symbols": {
+        "BIL": {
+          "rows": 83927,
+          "first": "2022-01-03 17:02:00+00:00",
+          "last": "2026-09-14 19:58:00+00:00",
+          "months_present": 57,
+          "months_missing_in_span": []
+        },
+        "BND": {
+          "rows": 173091,
+          "first": "2022-01-03 14:30:00+00:00",
+          "last": "2026-07-15 19:59:00+00:00",
+          "months_present": 55,
+          "months_missing_in_span": []
+        },
+        "BTCUSD": {
+          "rows": 2141062,
+          "first": "2022-01-01 00:00:00+00:00",
+          "last": "2026-09-14 21:59:00+00:00",
+          "months_present": 57,
+          "months_missing_in_span": []
+        },
+        "CPER": {
+          "rows": 27075,
+          "first": "2022-01-03 14:51:00+00:00",
+          "last": "2026-09-14 19:59:00+00:00",
+          "months_present": 57,
+          "months_missing_in_span": []
+        },
+        "EEM": {
+          "rows": 364839,
+          "first": "2022-01-03 14:30:00+00:00",
+          "last": "2026-09-14 20:12:00+00:00",
+          "months_present": 57,
+          "months_missing_in_span": []
+        },
+        "FXB": {
+          "rows": 1612,
+          "first": "2022-01-05 15:08:00+00:00",
+          "last": "2026-09-14 18:00:00+00:00",
+          "months_present": 57,
+          "months_missing_in_span": []
+        },
+        "FXC": {
+          "rows": 2643,
+          "first": "2022-01-03 16:41:00+00:00",
+          "last": "2026-09-11 19:48:00+00:00",
+          "months_present": 57,
+          "months_missing_in_span": []
+        },
+        "FXE": {
+          "rows": 10536,
+          "first": "2022-01-03 14:51:00+00:00",
+          "last": "2026-09-14 19:12:00+00:00",
+          "months_present": 57,
+          "months_missing_in_span": []
+        },
+        "FXI": {
+          "rows": 363435,
+          "first": "2022-01-03 14:30:00+00:00",
+          "last": "2026-09-14 19:59:00+00:00",
+          "months_present": 57,
+          "months_missing_in_span": []
+        },
+        "FXY": {
+          "rows": 12966,
+          "first": "2022-01-04 15:29:00+00:00",
+          "last": "2026-09-14 19:00:00+00:00",
+          "months_present": 57,
+          "months_missing_in_span": []
+        },
+        "GLD": {
+          "rows": 265653,
+          "first": "2022-01-03 14:30:00+00:00",
+          "last": "2026-09-14 20:55:00+00:00",
+          "months_present": 57,
+          "months_missing_in_span": []
+        },
+        "HYG": {
+          "rows": 398040,
+          "first": "2022-01-03 14:16:00+00:00",
+          "last": "2026-09-14 19:59:00+00:00",
+          "months_present": 57,
+          "months_missing_in_span": []
+        },
+        "IEF": {
+          "rows": 203667,
+          "first": "2022-01-03 14:29:00+00:00",
+          "last": "2026-09-14 20:00:00+00:00",
+          "months_present": 57,
+          "months_missing_in_span": []
+        },
+        "IWM": {
+          "rows": 436532,
+          "first": "2022-01-03 14:30:00+00:00",
+          "last": "2026-09-14 19:59:00+00:00",
+          "months_present": 57,
+          "months_missing_in_span": []
+        },
+        "LQD": {
+          "rows": 380997,
+          "first": "2022-01-03 14:35:00+00:00",
+          "last": "2026-09-14 19:59:00+00:00",
+          "months_present": 57,
+          "months_missing_in_span": []
+        },
+        "QQQ": {
+          "rows": 459587,
+          "first": "2022-01-03 14:01:00+00:00",
+          "last": "2026-09-14 20:52:00+00:00",
+          "months_present": 57,
+          "months_missing_in_span": []
+        },
+        "SPY": {
+          "rows": 463621,
+          "first": "2022-01-03 13:44:00+00:00",
+          "last": "2026-09-14 19:59:00+00:00",
+          "months_present": 57,
+          "months_missing_in_span": []
+        },
+        "TIP": {
+          "rows": 160522,
+          "first": "2022-01-03 14:30:00+00:00",
+          "last": "2026-09-14 19:59:00+00:00",
+          "months_present": 57,
+          "months_missing_in_span": []
+        },
+        "TLT": {
+          "rows": 410897,
+          "first": "2022-01-03 14:27:00+00:00",
+          "last": "2026-09-14 20:19:00+00:00",
+          "months_present": 57,
+          "months_missing_in_span": []
+        },
+        "USO": {
+          "rows": 166373,
+          "first": "2022-01-03 14:30:00+00:00",
+          "last": "2026-09-14 19:59:00+00:00",
+          "months_present": 57,
+          "months_missing_in_span": []
+        },
+        "UUP": {
+          "rows": 39568,
+          "first": "2022-01-03 14:30:00+00:00",
+          "last": "2026-09-14 19:59:00+00:00",
+          "months_present": 57,
+          "months_missing_in_span": []
+        },
+        "VIXY": {
+          "rows": 157638,
+          "first": "2022-01-03 14:31:00+00:00",
+          "last": "2026-09-14 19:59:00+00:00",
+          "months_present": 57,
+          "months_missing_in_span": []
+        },
+        "XLF": {
+          "rows": 427397,
+          "first": "2022-01-03 14:30:00+00:00",
+          "last": "2026-09-14 19:59:00+00:00",
+          "months_present": 57,
+          "months_missing_in_span": []
+        }
+      },
+      "n_symbols": 23,
+      "universe22_missing": []
+    },
+    "1Hour": {
+      "symbols": {
+        "BIL": {
+          "rows": 8953,
+          "first": "2020-07-27 13:00:00+00:00",
+          "last": "2026-09-14 19:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "BND": {
+          "rows": 10479,
+          "first": "2020-07-27 13:00:00+00:00",
+          "last": "2026-07-17 19:00:00+00:00",
+          "months_present": 73,
+          "months_missing_in_span": []
+        },
+        "BTCUSD": {
+          "rows": 50038,
+          "first": "2021-01-01 06:00:00+00:00",
+          "last": "2026-09-14 21:00:00+00:00",
+          "months_present": 69,
+          "months_missing_in_span": []
+        },
+        "CPER": {
+          "rows": 5364,
+          "first": "2020-07-29 15:00:00+00:00",
+          "last": "2026-09-14 19:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "EEM": {
+          "rows": 11815,
+          "first": "2020-07-27 13:00:00+00:00",
+          "last": "2026-09-14 20:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "FXB": {
+          "rows": 1367,
+          "first": "2020-07-27 15:00:00+00:00",
+          "last": "2026-09-14 18:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "FXC": {
+          "rows": 1988,
+          "first": "2020-07-27 15:00:00+00:00",
+          "last": "2026-09-11 19:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "FXE": {
+          "rows": 4218,
+          "first": "2020-07-27 12:00:00+00:00",
+          "last": "2026-09-14 19:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "FXI": {
+          "rows": 12042,
+          "first": "2020-07-27 13:00:00+00:00",
+          "last": "2026-09-14 19:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "FXY": {
+          "rows": 4348,
+          "first": "2020-07-28 16:00:00+00:00",
+          "last": "2026-09-14 19:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "GLD": {
+          "rows": 11225,
+          "first": "2020-07-27 13:00:00+00:00",
+          "last": "2026-09-14 20:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "HYG": {
+          "rows": 10903,
+          "first": "2020-07-27 13:00:00+00:00",
+          "last": "2026-09-14 19:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "IEF": {
+          "rows": 11282,
+          "first": "2020-07-27 12:00:00+00:00",
+          "last": "2026-09-14 20:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "IWM": {
+          "rows": 12605,
+          "first": "2020-07-27 13:00:00+00:00",
+          "last": "2026-09-14 19:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "LQD": {
+          "rows": 10795,
+          "first": "2020-07-27 13:00:00+00:00",
+          "last": "2026-09-14 19:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "QQQ": {
+          "rows": 13202,
+          "first": "2020-07-27 13:00:00+00:00",
+          "last": "2026-09-14 20:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "SPY": {
+          "rows": 12911,
+          "first": "2020-07-27 12:00:00+00:00",
+          "last": "2026-09-14 19:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "TIP": {
+          "rows": 10734,
+          "first": "2020-07-27 13:00:00+00:00",
+          "last": "2026-09-14 19:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "TLT": {
+          "rows": 12652,
+          "first": "2020-07-27 13:00:00+00:00",
+          "last": "2026-09-14 20:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "USO": {
+          "rows": 11057,
+          "first": "2020-04-21 13:00:00+00:00",
+          "last": "2026-09-14 19:00:00+00:00",
+          "months_present": 76,
+          "months_missing_in_span": [
+            "2020-05",
+            "2020-06"
+          ]
+        },
+        "UUP": {
+          "rows": 9040,
+          "first": "2020-07-27 13:00:00+00:00",
+          "last": "2026-09-14 19:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "VIXY": {
+          "rows": 10850,
+          "first": "2020-07-27 13:00:00+00:00",
+          "last": "2026-09-14 19:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "XLF": {
+          "rows": 11016,
+          "first": "2020-07-27 13:00:00+00:00",
+          "last": "2026-09-14 19:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        }
+      },
+      "n_symbols": 23,
+      "universe22_missing": []
+    },
+    "1Day": {
+      "symbols": {
+        "BIL": {
+          "rows": 1527,
+          "first": "2020-07-27 04:00:00+00:00",
+          "last": "2026-09-14 04:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "BTCUSD": {
+          "rows": 2152,
+          "first": "2021-01-01 00:00:00+00:00",
+          "last": "2026-09-14 00:00:00+00:00",
+          "months_present": 70,
+          "months_missing_in_span": []
+        },
+        "CPER": {
+          "rows": 1459,
+          "first": "2020-07-29 04:00:00+00:00",
+          "last": "2026-09-14 04:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "EEM": {
+          "rows": 1541,
+          "first": "2020-07-27 04:00:00+00:00",
+          "last": "2026-09-14 04:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "FXB": {
+          "rows": 1250,
+          "first": "2020-07-27 04:00:00+00:00",
+          "last": "2026-09-14 04:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "FXC": {
+          "rows": 1352,
+          "first": "2020-07-27 04:00:00+00:00",
+          "last": "2026-09-11 04:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "FXE": {
+          "rows": 1434,
+          "first": "2020-07-27 04:00:00+00:00",
+          "last": "2026-09-14 04:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "FXI": {
+          "rows": 1541,
+          "first": "2020-07-27 04:00:00+00:00",
+          "last": "2026-09-14 04:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "FXY": {
+          "rows": 1315,
+          "first": "2020-07-28 04:00:00+00:00",
+          "last": "2026-09-14 04:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "GLD": {
+          "rows": 1541,
+          "first": "2020-07-27 04:00:00+00:00",
+          "last": "2026-09-14 04:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "HYG": {
+          "rows": 1541,
+          "first": "2020-07-27 04:00:00+00:00",
+          "last": "2026-09-14 04:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "IEF": {
+          "rows": 1541,
+          "first": "2020-07-27 04:00:00+00:00",
+          "last": "2026-09-14 04:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "IWM": {
+          "rows": 1541,
+          "first": "2020-07-27 04:00:00+00:00",
+          "last": "2026-09-14 04:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "LQD": {
+          "rows": 1541,
+          "first": "2020-07-27 04:00:00+00:00",
+          "last": "2026-09-14 04:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "QQQ": {
+          "rows": 1541,
+          "first": "2020-07-27 04:00:00+00:00",
+          "last": "2026-09-14 04:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "SPY": {
+          "rows": 1542,
+          "first": "2018-11-01 04:00:00+00:00",
+          "last": "2026-09-14 04:00:00+00:00",
+          "months_present": 76,
+          "months_missing_in_span": [
+            "2018-12",
+            "2019-01",
+            "2019-02",
+            "2019-03",
+            "2019-04",
+            "2019-05",
+            "2019-06",
+            "2019-07",
+            "2019-08",
+            "2019-09",
+            "2019-10",
+            "2019-11",
+            "2019-12",
+            "2020-01",
+            "2020-02",
+            "2020-03",
+            "2020-04",
+            "2020-05",
+            "2020-06"
+          ]
+        },
+        "TIP": {
+          "rows": 1541,
+          "first": "2020-07-27 04:00:00+00:00",
+          "last": "2026-09-14 04:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "TLT": {
+          "rows": 1541,
+          "first": "2020-07-27 04:00:00+00:00",
+          "last": "2026-09-14 04:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "USO": {
+          "rows": 1542,
+          "first": "2020-04-21 04:00:00+00:00",
+          "last": "2026-09-14 04:00:00+00:00",
+          "months_present": 76,
+          "months_missing_in_span": [
+            "2020-05",
+            "2020-06"
+          ]
+        },
+        "UUP": {
+          "rows": 1537,
+          "first": "2020-07-27 04:00:00+00:00",
+          "last": "2026-09-14 04:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "VIXY": {
+          "rows": 1541,
+          "first": "2020-07-27 04:00:00+00:00",
+          "last": "2026-09-14 04:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        },
+        "XLF": {
+          "rows": 1541,
+          "first": "2020-07-27 04:00:00+00:00",
+          "last": "2026-09-14 04:00:00+00:00",
+          "months_present": 75,
+          "months_missing_in_span": []
+        }
+      },
+      "n_symbols": 22,
+      "universe22_missing": []
+    }
+  }
+}

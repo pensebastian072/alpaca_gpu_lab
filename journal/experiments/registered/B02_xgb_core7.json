@@ -1,0 +1,29 @@
+{
+  "battery_id": "B02_xgb_core7",
+  "registered_at": "2026-07-17T13:20:15+00:00",
+  "hypothesis": "GPU gradient boosting extracts more of the intraday triple-barrier signal than the linear/RF baselines (B01) on the same features, enough to clear the gate after cumulative n_trials deflation.",
+  "dataset_family": "intraday_core7_1min",
+  "horizons": [
+    5,
+    15,
+    30
+  ],
+  "model": "xgboost-cuda",
+  "param_grid": {
+    "max_depth": [
+      4,
+      6,
+      8
+    ],
+    "learning_rate": [
+      0.05,
+      0.1
+    ],
+    "min_child_weight": [
+      5,
+      50
+    ]
+  },
+  "n_trials": 36,
+  "feed": "iex"
+}

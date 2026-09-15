@@ -1,0 +1,107 @@
+{
+  "experiment_id": "deep_v5_meta_v1",
+  "generated_at": "2026-07-25T11:00:47.715629+00:00",
+  "status": "SHADOW; BS-modeled labels (upper bound); GPU XGBoost-CUDA",
+  "n_scored": 865,
+  "walk_forward_folds": [
+    {
+      "train": 174,
+      "test": 174,
+      "test_start": "2020-11-06",
+      "test_end": "2021-10-26"
+    },
+    {
+      "train": 348,
+      "test": 174,
+      "test_start": "2021-10-27",
+      "test_end": "2023-04-25"
+    },
+    {
+      "train": 522,
+      "test": 174,
+      "test_start": "2023-04-26",
+      "test_end": "2024-04-23"
+    },
+    {
+      "train": 696,
+      "test": 174,
+      "test_start": "2024-04-23",
+      "test_end": "2025-06-23"
+    },
+    {
+      "train": 870,
+      "test": 169,
+      "test_start": "2025-06-23",
+      "test_end": "2026-07-16"
+    }
+  ],
+  "oos_rank_ic_mean": 0.0311,
+  "oos_rank_ic_per_fold": [
+    NaN,
+    -0.0244,
+    0.1295,
+    -0.0396,
+    0.059
+  ],
+  "top_decile_threshold": 0.9094,
+  "unfiltered_v5": {
+    "n": 865,
+    "win_rate": 0.8046,
+    "mean_pnl_usd": 10.87,
+    "total_pnl_usd": 9401.16,
+    "cluster_gate": {
+      "passes": true,
+      "deflated_sharpe": {
+        "sr": 0.1698,
+        "ratio": 2.5058,
+        "prob": 0.9939,
+        "n": 321,
+        "n_trials": 1
+      },
+      "pbo": 0.004,
+      "profit_factor": 1.6326,
+      "sharpe": 0.16975428435755427,
+      "n_trades": 321,
+      "thresholds": {
+        "deflated_sharpe_min": 0.0,
+        "pbo_max": 0.5
+      },
+      "reasons": [
+        "cleared gate"
+      ]
+    }
+  },
+  "filtered_topdecile": {
+    "n": 87,
+    "win_rate": 0.8736,
+    "mean_pnl_usd": 21.71,
+    "total_pnl_usd": 1888.34,
+    "cluster_gate": {
+      "passes": true,
+      "deflated_sharpe": {
+        "sr": 0.3416,
+        "ratio": 1.4782,
+        "prob": 0.9303,
+        "n": 56,
+        "n_trials": 1
+      },
+      "pbo": 0.0,
+      "profit_factor": 2.9903,
+      "sharpe": 0.34158767741039936,
+      "n_trades": 56,
+      "thresholds": {
+        "deflated_sharpe_min": 0.0,
+        "pbo_max": 0.5
+      },
+      "reasons": [
+        "cleared gate"
+      ]
+    }
+  },
+  "predictions": {
+    "topdecile_win_gt_base": "True",
+    "filtered_mean_gt_unfiltered": true,
+    "rank_ic_positive": true
+  },
+  "note": "Meta-filter on v5; not a retune. Labels modeled (no OPRA). Confirm on real options once OPRA is signed. Gate on cluster-adjusted PnL, honest."
+}

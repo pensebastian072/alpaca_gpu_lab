@@ -1,0 +1,16 @@
+.venv/
+.env
+__pycache__/
+*.pyc
+market_data/raw/
+market_data/features/
+market_data/models/
+market_data/backtests/
+market_data/scores/
+market_data/*.log
+journal/logs/
+*.parquet
+_windows_ca_bundle.pem
+
+# graphify knowledge graph output (local build artifact, rebuilt weekly)
+graphify-out/

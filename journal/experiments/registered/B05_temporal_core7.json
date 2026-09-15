@@ -1,0 +1,22 @@
+{
+  "battery_id": "B05_temporal_core7",
+  "registered_at": "2026-07-17T14:31:57+00:00",
+  "hypothesis": "Sequential structure in the last 60 minute-bars (order of moves, not just rolling summaries) carries triple-barrier signal the pointwise models (B01/B02) cannot see.",
+  "dataset_family": "intraday_core7_1min",
+  "horizons": [
+    5,
+    15,
+    30
+  ],
+  "model": "torch-temporal",
+  "param_grid": {
+    "arch": [
+      "cnn",
+      "gru"
+    ],
+    "seq_len": 60,
+    "hidden": 64
+  },
+  "n_trials": 6,
+  "feed": "iex"
+}

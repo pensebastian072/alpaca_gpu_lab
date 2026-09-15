@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block title %}alpaca_gpu_lab &mdash; 23-asset GPU alpha bench{% endblock %}
+{% block content %}
+      <div class="card mb-2">
+        <div class="card-header">
+          <h3 class="card-title">23-asset bench &mdash; gate verdicts</h3>
+          <span class="card-subtitle ms-2 text-muted" id="alpSummary">loading&hellip;</span>
+        </div>
+        <div class="card-body py-2">
+          <div class="text-muted small">
+            Every experiment stays <strong>SHADOW</strong> until it clears the research
+            gate: <span class="mono">PBO &lt; 0.5</span> <em>and</em>
+            <span class="mono">Deflated Sharpe ratio &gt; 1.645</span>. A table of failures
+            is the honest state, not a bug.
+          </div>
+          <div class="text-muted small mt-2">
+            <strong>The 1.645 bar is the whole point.</strong> An earlier version of this
+            gate asked only for <span class="mono">ratio &gt; 0</span>, which is a median
+            test &mdash; best-of-8 pure noise clears it about 45% of the time. The bar was
+            raised on 2026-07-30. This page <strong>recomputes</strong> every verdict from
+            the stored statistics against the current thresholds rather than trusting the
+            <span class="mono">passes</span> field in the flag file, because verdicts
+            written under the old bar are still sitting in it marked PASS. Any such row is
+            tagged <span class="badge bg-orange">superseded</span> below.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Experiment &times; horizon</h3>
+          <span class="card-subtitle ms-2 text-muted" id="alpGateCount"></span>
+        </div>
+        <div class="table-responsive" style="max-height:70vh">
+          <table class="table table-vcenter table-sm card-table mono">
+            <thead><tr>
+              <th>Experiment</th>
+              <th class="text-end">Horizon</th>
+              <th class="text-center">Gate</th>
+              <th class="text-end">DSR ratio</th>
+              <th class="text-end">PBO</th>
+              <th class="text-end">Profit factor</th>
+              <th class="text-end">n</th>
+            </tr></thead>
+            <tbody id="alpBody"><tr><td colspan="7" class="text-muted">loading&hellip;</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+{% endblock %}
+{% block scripts %}
+<script>
+async function loadAlpaca(){
+  let d; try { d = await getJSON('/api/alpaca'); } catch(e){ return; }
+  setSourcePills(d);
+
+  const enforced = (d.enforce||'no') !== 'no';
+  $('alpSummary').innerHTML =
+    `<span class="badge ${d.stale?'bg-secondary':'bg-orange'}">${d.stale?'STALE':esc(d.status||'SHADOW')}</span> `
+    + `promoted: <strong>${d.n_promoted||0}</strong> / ${d.n_experiments||0} experiments &middot; `
+    + `enforce: <strong class="${enforced?'text-red':''}">${esc(d.enforce||'no')}</strong>`;
+
+  const rows = d.rows||[];
+  const sup = d.n_superseded||0;
+  $('alpGateCount').innerHTML = rows.length
+    ? `${d.n_pass||0} of ${rows.length} cells pass at DSR &gt; ${fmt(d.dsr_min,3)}, PBO &lt; ${fmt(d.pbo_max,2)}`
+      + (sup ? ` &middot; <span class="text-orange">${sup} stale PASS in the flag file</span>` : '')
+    : '';
+  $('alpBody').innerHTML = rows.map(r=>
+    `<tr><td>${esc(r.experiment)}</td>
+      <td class="text-end">${esc(r.horizon)}</td>
+      <td class="text-center">${r.passes
+        ? '<span class="badge bg-green">PASS</span>'
+        : (r.superseded
+            ? '<span class="badge bg-orange" title="marked PASS in the flag file under the old DSR>0 bar; fails the current 1.645 bar">superseded</span>'
+            : '<span class="badge bg-secondary">fail</span>')}</td>
+      <td class="text-end ${r.dsr_ratio!=null && r.dsr_ratio>0?'text-green':'text-red'}">${r.dsr_ratio!=null?fmt(r.dsr_ratio,3):'–'}</td>
+      <td class="text-end">${r.pbo!=null?fmt(r.pbo,3):'<span class="text-muted">–</span>'}</td>
+      <td class="text-end">${r.profit_factor!=null?fmt(r.profit_factor,3):'<span class="text-muted">–</span>'}</td>
+      <td class="text-end text-muted">${r.n!=null?r.n:'–'}</td></tr>`
+  ).join('') || `<tr><td colspan="7" class="text-muted">${esc(d.note||'no gate rows yet')}</td></tr>`;
+}
+loadAlpaca();
+setInterval(loadAlpaca, 60000);
+</script>
+{% endblock %}

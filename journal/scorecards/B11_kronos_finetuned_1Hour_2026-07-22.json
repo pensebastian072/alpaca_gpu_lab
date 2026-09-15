@@ -1,0 +1,178 @@
+{
+  "battery_id": "B11_kronos_finetuned_1Hour",
+  "dataset_family": "kronos_ft_spy_1hour",
+  "symbols": [
+    "SPY"
+  ],
+  "timeframe": "1Hour",
+  "feed": "iex",
+  "mode": "magnitude",
+  "accept": "rank",
+  "q": 0.1,
+  "threshold": 0.6,
+  "run_at": "2026-07-22T13:39:08+00:00",
+  "combos": [
+    {
+      "params": {
+        "model": "kronos-ft"
+      },
+      "horizons": {
+        "5": {
+          "passes": false,
+          "deflated_sharpe": {
+            "sr": 0.0699,
+            "ratio": 0.4349,
+            "prob": 0.6682,
+            "n": 39,
+            "n_trials": 1
+          },
+          "pbo": null,
+          "profit_factor": 1.1785,
+          "sharpe": 0.06991127394843732,
+          "n_trades": 39,
+          "thresholds": {
+            "deflated_sharpe_min": 0.0,
+            "pbo_max": 0.5
+          },
+          "reasons": [
+            "insufficient PnL for PBO (need >=40 trades)"
+          ],
+          "bootstrap": {
+            "device": "cuda",
+            "n_boot": 10000,
+            "n_perm": 10000,
+            "sharpe_ci": [
+              -0.2542,
+              0.3838
+            ],
+            "sharpe_prob_positive": 0.6653,
+            "mean": 0.000384,
+            "perm_p_value": 0.3287
+          },
+          "metrics": {
+            "n_trades": 39,
+            "expectancy": 0.0003837479230015729,
+            "profit_factor_after_cost": 1.1785347023552684,
+            "max_drawdown": 0.03095014368294938,
+            "sortino": 0.17516589267273774,
+            "precision_accepted": 0.41025641025641024,
+            "pct_stamps_traded": 0.15789473684210525,
+            "regime_breakdown": "unknown (regime tags land in P6)"
+          },
+          "ic": {
+            "ic_mean": -0.06422,
+            "ic_std": 0.24591,
+            "ic_t": -1.168,
+            "ic_hit_rate": 0.4,
+            "n_folds": 20
+          }
+        },
+        "15": {
+          "passes": false,
+          "deflated_sharpe": {
+            "sr": 0.1368,
+            "ratio": -2.3652,
+            "prob": 0.009,
+            "n": 39,
+            "n_trials": 2
+          },
+          "pbo": null,
+          "profit_factor": 1.3741,
+          "sharpe": 0.13675993293337935,
+          "n_trades": 39,
+          "thresholds": {
+            "deflated_sharpe_min": 0.0,
+            "pbo_max": 0.5
+          },
+          "reasons": [
+            "deflated_sharpe_ratio -2.3652 <= 0.0",
+            "insufficient PnL for PBO (need >=40 trades)"
+          ],
+          "bootstrap": {
+            "device": "cuda",
+            "n_boot": 10000,
+            "n_perm": 10000,
+            "sharpe_ci": [
+              -0.1837,
+              0.4621
+            ],
+            "sharpe_prob_positive": 0.8076,
+            "mean": 0.000691,
+            "perm_p_value": 0.2002
+          },
+          "metrics": {
+            "n_trades": 39,
+            "expectancy": 0.0006909921324234143,
+            "profit_factor_after_cost": 1.3740607322392513,
+            "max_drawdown": 0.021228874342207035,
+            "sortino": 0.3139416273221994,
+            "precision_accepted": 0.46153846153846156,
+            "pct_stamps_traded": 0.15789473684210525,
+            "regime_breakdown": "unknown (regime tags land in P6)"
+          },
+          "ic": {
+            "ic_mean": 0.00027,
+            "ic_std": 0.33183,
+            "ic_t": 0.004,
+            "ic_hit_rate": 0.45,
+            "n_folds": 20
+          }
+        },
+        "30": {
+          "passes": false,
+          "deflated_sharpe": {
+            "sr": -0.1326,
+            "ratio": -5.7082,
+            "prob": 0.0,
+            "n": 36,
+            "n_trials": 3
+          },
+          "pbo": null,
+          "profit_factor": 0.7267,
+          "sharpe": -0.13259104015650355,
+          "n_trades": 36,
+          "thresholds": {
+            "deflated_sharpe_min": 0.0,
+            "pbo_max": 0.5
+          },
+          "reasons": [
+            "deflated_sharpe_ratio -5.7082 <= 0.0",
+            "insufficient PnL for PBO (need >=40 trades)"
+          ],
+          "bootstrap": {
+            "device": "cuda",
+            "n_boot": 10000,
+            "n_perm": 10000,
+            "sharpe_ci": [
+              -0.5149,
+              0.1929
+            ],
+            "sharpe_prob_positive": 0.2064,
+            "mean": -0.000671,
+            "perm_p_value": 0.7805
+          },
+          "metrics": {
+            "n_trades": 36,
+            "expectancy": -0.0006707156723726864,
+            "profit_factor_after_cost": 0.7266502396730959,
+            "max_drawdown": 0.032890271913544405,
+            "sortino": -0.2542253067580755,
+            "precision_accepted": 0.3333333333333333,
+            "pct_stamps_traded": 0.16216216216216217,
+            "regime_breakdown": "unknown (regime tags land in P6)"
+          },
+          "ic": {
+            "ic_mean": -0.07308,
+            "ic_std": 0.30454,
+            "ic_t": -1.018,
+            "ic_hit_rate": 0.389,
+            "n_folds": 18
+          }
+        }
+      },
+      "all_pass": false
+    }
+  ],
+  "promoted": false,
+  "status": "FAIL->SHADOW"
+}

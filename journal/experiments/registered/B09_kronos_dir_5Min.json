@@ -1,0 +1,18 @@
+{
+  "battery_id": "B09_kronos_dir_5Min",
+  "registered_at": "2026-07-26T16:44:32+00:00",
+  "hypothesis": "Kronos-small zero-shot forecast direction (pred_close vs base) on 5Min bars ranks triple-barrier outcomes with positive rank-IC and clears the gate \u2014 unlike the prior copper zero-shot FAIL.",
+  "dataset_family": "kronos_core7_5min",
+  "horizons": [
+    5,
+    15,
+    30
+  ],
+  "model": "kronos-direction",
+  "param_grid": {
+    "source": "kronos-small",
+    "zero_shot": true
+  },
+  "n_trials": 3,
+  "feed": "iex"
+}

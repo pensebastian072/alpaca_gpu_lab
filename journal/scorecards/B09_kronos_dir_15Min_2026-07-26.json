@@ -1,0 +1,159 @@
+{
+  "battery_id": "B09_kronos_dir_15Min",
+  "dataset_family": "kronos_core7_15min",
+  "symbols": [
+    "SPY",
+    "QQQ",
+    "IWM",
+    "BND",
+    "IEF",
+    "TLT",
+    "VIXY"
+  ],
+  "timeframe": "15Min",
+  "feed": "iex",
+  "mode": "direction",
+  "accept": "rank",
+  "q": 0.1,
+  "threshold": 0.6,
+  "run_at": "2026-07-26T15:44:07+00:00",
+  "combos": [
+    {
+      "params": {
+        "model": "kronos"
+      },
+      "horizons": {
+        "5": {
+          "passes": false,
+          "deflated_sharpe": {
+            "sr": 0.0963,
+            "ratio": -13.5727,
+            "prob": 0.0,
+            "n": 188,
+            "n_trials": 4
+          },
+          "pbo": 0.0,
+          "profit_factor": 1.3133,
+          "sharpe": 0.09626804252763338,
+          "n_trades": 188,
+          "thresholds": {
+            "deflated_sharpe_min": 0.0,
+            "pbo_max": 0.5
+          },
+          "reasons": [
+            "deflated_sharpe_ratio -13.5727 <= 0.0"
+          ],
+          "bootstrap": {
+            "device": "cuda",
+            "n_boot": 10000,
+            "n_perm": 10000,
+            "sharpe_ci": [
+              -0.0481,
+              0.2321
+            ],
+            "sharpe_prob_positive": 0.9063,
+            "mean": 0.000581,
+            "perm_p_value": 0.0935
+          },
+          "metrics": {
+            "n_trades": 188,
+            "expectancy": 0.0005808909835738131,
+            "profit_factor_after_cost": 1.3132812918341716,
+            "max_drawdown": 0.030314998514665625,
+            "sortino": 0.17406192621559796,
+            "precision_accepted": 0.4021164021164021,
+            "pct_stamps_traded": 0.10651558073654391,
+            "regime_breakdown": "unknown (regime tags land in P6)"
+          },
+          "ic": {
+            "ic_mean": -0.01299,
+            "ic_std": 0.11222,
+            "ic_t": -0.433,
+            "ic_hit_rate": 0.5,
+            "n_folds": 14
+          }
+        },
+        "15": {
+          "passes": false,
+          "deflated_sharpe": {
+            "sr": 0.1545,
+            "ratio": -10.3631,
+            "prob": 0.0,
+            "n": 102,
+            "n_trials": 5
+          },
+          "pbo": 0.0476,
+          "profit_factor": 1.4391,
+          "sharpe": 0.15451859798487047,
+          "n_trades": 102,
+          "thresholds": {
+            "deflated_sharpe_min": 0.0,
+            "pbo_max": 0.5
+          },
+          "reasons": [
+            "deflated_sharpe_ratio -10.3631 <= 0.0"
+          ],
+          "bootstrap": {
+            "device": "cuda",
+            "n_boot": 10000,
+            "n_perm": 10000,
+            "sharpe_ci": [
+              -0.0422,
+              0.3528
+            ],
+            "sharpe_prob_positive": 0.9363,
+            "mean": 0.000693,
+            "perm_p_value": 0.0647
+          },
+          "metrics": {
+            "n_trades": 102,
+            "expectancy": 0.0006934203679847096,
+            "profit_factor_after_cost": 1.4390801725231184,
+            "max_drawdown": 0.03323457077762801,
+            "sortino": 0.3054790276144173,
+            "precision_accepted": 0.5392156862745098,
+            "pct_stamps_traded": 0.112707182320442,
+            "regime_breakdown": "unknown (regime tags land in P6)"
+          },
+          "ic": {
+            "ic_mean": 0.03313,
+            "ic_std": 0.13567,
+            "ic_t": 0.914,
+            "ic_hit_rate": 0.643,
+            "n_folds": 14
+          }
+        },
+        "30": {
+          "passes": false,
+          "deflated_sharpe": null,
+          "pbo": null,
+          "profit_factor": null,
+          "sharpe": null,
+          "n_trades": 0,
+          "thresholds": {
+            "deflated_sharpe_min": 0.0,
+            "pbo_max": 0.5
+          },
+          "reasons": [
+            "insufficient PnL for Deflated Sharpe (need >=8 trades)",
+            "insufficient PnL for PBO (need >=40 trades)"
+          ],
+          "bootstrap": null,
+          "metrics": {
+            "n_trades": 0
+          },
+          "ic": {
+            "ic_mean": null,
+            "ic_std": null,
+            "ic_t": null,
+            "ic_hit_rate": null,
+            "n_folds": 0
+          }
+        }
+      },
+      "all_pass": false
+    }
+  ],
+  "promoted": false,
+  "status": "FAIL->SHADOW"
+}

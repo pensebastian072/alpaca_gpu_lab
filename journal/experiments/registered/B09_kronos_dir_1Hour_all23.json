@@ -1,0 +1,18 @@
+{
+  "battery_id": "B09_kronos_dir_1Hour_all23",
+  "registered_at": "2026-07-26T18:31:17+00:00",
+  "hypothesis": "Kronos-small zero-shot forecast direction (pred_close vs base) on 1Hour bars over BIL,BND,BTCUSD,CPER,EEM,FXB,FXC,FXE,FXI,FXY,GLD,HYG,IEF,IWM,LQD,QQQ,SPY,TIP,TLT,USO,UUP,VIXY,XLF ranks triple-barrier outcomes with positive rank-IC and clears the gate \u2014 unlike the prior copper zero-shot FAIL.",
+  "dataset_family": "kronos_all23_1hour",
+  "horizons": [
+    5,
+    15,
+    30
+  ],
+  "model": "kronos-direction",
+  "param_grid": {
+    "source": "kronos-small",
+    "zero_shot": true
+  },
+  "n_trials": 3,
+  "feed": "iex"
+}

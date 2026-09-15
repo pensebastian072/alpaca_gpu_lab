@@ -1,0 +1,17 @@
+# Data layer (CPU)
+alpaca-py>=0.42
+polars>=1.0
+pyarrow>=16
+pandas>=2.0
+numpy>=1.26
+
+# Model layer (GPU work) — torch installed separately from the cu121 index
+# via scripts/setup_venv.ps1 (win-quant-env: uv --native-tls).
+xgboost>=2.1        # tree_method=hist, device=cuda
+scikit-learn>=1.4   # logistic / RF baselines + metrics
+pytest
+truststore
+transformers   # FinBERT news scorer (src/news/score.py), runs on the cu121 torch
+
+# Standalone read-only viewer (ui/app.py, 127.0.0.1:8101)
+flask>=3.0

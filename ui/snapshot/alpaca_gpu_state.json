@@ -1,0 +1,828 @@
+{
+  "as_of": "2026-09-13T22:15:39+00:00",
+  "stale": false,
+  "enforce": "no",
+  "status": "SHADOW",
+  "promoted": {
+    "B01_baselines_core7": false,
+    "B02_xgb_core7": false,
+    "B03_xgb_cross_asset": false,
+    "B04_xgb_sentiment": false,
+    "B04b_xgb_sentiment_rank": false,
+    "B05_temporal_core7": false,
+    "B06_direction_rank_15Min": false,
+    "B06_direction_rank_1Hour": false,
+    "B06_direction_rank": false,
+    "B06_direction_rank_4Hour": false,
+    "B06_direction_rank_5Min": false,
+    "B07_magnitude_15Min": false,
+    "B07_magnitude_1Hour": false,
+    "B07_magnitude_4Hour": false,
+    "B07_magnitude_5Min": false,
+    "B08_xsect_15Min": false,
+    "B08_xsect_1Hour": false,
+    "B08_xsect_4Hour": false,
+    "B08_xsect_5Min": false,
+    "B09_kronos_dir_15Min": false,
+    "B09_kronos_dir_1Hour": false,
+    "B09_kronos_dir_1Hour_all23": false,
+    "B09_kronos_dir_1Hour_btc": false,
+    "B09_kronos_dir_1Min_btc": false,
+    "B09_kronos_dir_4Hour": false,
+    "B09_kronos_dir_5Min": false,
+    "B10_kronos_mag_15Min": false,
+    "B10_kronos_mag_1Hour": false,
+    "B10_kronos_mag_1Hour_all23": false,
+    "B10_kronos_mag_1Hour_btc": false,
+    "B10_kronos_mag_1Min_btc": false,
+    "B10_kronos_mag_4Hour": false,
+    "B10_kronos_mag_5Min": false,
+    "B11_kronos_finetuned_1Hour": false
+  },
+  "gate": {
+    "B01_baselines_core7": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": -7.3465,
+        "pbo": null,
+        "profit_factor": 0.3209,
+        "n": 13
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -6.0678,
+        "pbo": null,
+        "profit_factor": 0.746,
+        "n": 16
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": -5.9588,
+        "pbo": null,
+        "profit_factor": 0.3877,
+        "n": 14
+      }
+    },
+    "B02_xgb_core7": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": null,
+        "pbo": null,
+        "profit_factor": null,
+        "n": 0
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": null,
+        "pbo": null,
+        "profit_factor": null,
+        "n": 0
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": null,
+        "pbo": null,
+        "profit_factor": null,
+        "n": 0
+      }
+    },
+    "B03_xgb_cross_asset": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": null,
+        "pbo": null,
+        "profit_factor": null,
+        "n": 0
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": null,
+        "pbo": null,
+        "profit_factor": null,
+        "n": 0
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": null,
+        "pbo": null,
+        "profit_factor": null,
+        "n": 0
+      }
+    },
+    "B04_xgb_sentiment": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": null,
+        "pbo": null,
+        "profit_factor": null,
+        "n": 0
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": null,
+        "pbo": null,
+        "profit_factor": null,
+        "n": 0
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": null,
+        "pbo": null,
+        "profit_factor": null,
+        "n": 0
+      }
+    },
+    "B04b_xgb_sentiment_rank": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": -32.4599,
+        "pbo": 0.0,
+        "profit_factor": 0.2601,
+        "n": 15915
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -18.7308,
+        "pbo": 0.0,
+        "profit_factor": 0.3349,
+        "n": 5254
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": -12.9997,
+        "pbo": 0.0,
+        "profit_factor": 0.2995,
+        "n": 2720
+      }
+    },
+    "B05_temporal_core7": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": null,
+        "pbo": null,
+        "profit_factor": null,
+        "n": 0
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": null,
+        "pbo": null,
+        "profit_factor": null,
+        "n": 0
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": null,
+        "pbo": null,
+        "profit_factor": null,
+        "n": 0
+      }
+    },
+    "B06_direction_rank_15Min": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": -4.0351,
+        "pbo": 0.0,
+        "profit_factor": 0.6924,
+        "n": 774
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -7.7289,
+        "pbo": 0.0357,
+        "profit_factor": 0.667,
+        "n": 145
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": null,
+        "pbo": null,
+        "profit_factor": null,
+        "n": 0
+      }
+    },
+    "B06_direction_rank_1Hour": {
+      "5": {
+        "passes": true,
+        "dsr_ratio": 0.3727,
+        "pbo": 0.2897,
+        "profit_factor": 1.049,
+        "n": 376
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -6.219,
+        "pbo": 0.4881,
+        "profit_factor": 0.9632,
+        "n": 138
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": -7.4194,
+        "pbo": 0.3254,
+        "profit_factor": 0.9105,
+        "n": 71
+      }
+    },
+    "B06_direction_rank": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": -48.9387,
+        "pbo": 0.0,
+        "profit_factor": 0.2103,
+        "n": 13038
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -46.4209,
+        "pbo": 0.0,
+        "profit_factor": 0.2487,
+        "n": 4254
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": -34.0711,
+        "pbo": 0.0,
+        "profit_factor": 0.2787,
+        "n": 2069
+      }
+    },
+    "B06_direction_rank_4Hour": {
+      "5": {
+        "passes": true,
+        "dsr_ratio": 0.0485,
+        "pbo": 0.4841,
+        "profit_factor": 1.0125,
+        "n": 83
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": 1.0841,
+        "pbo": null,
+        "profit_factor": 1.535,
+        "n": 36
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": -0.8853,
+        "pbo": null,
+        "profit_factor": 2.4157,
+        "n": 27
+      }
+    },
+    "B06_direction_rank_5Min": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": -13.425,
+        "pbo": 0.0,
+        "profit_factor": 0.4525,
+        "n": 2704
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -22.0092,
+        "pbo": 0.0,
+        "profit_factor": 0.5679,
+        "n": 799
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": -18.1005,
+        "pbo": 0.0,
+        "profit_factor": 0.5972,
+        "n": 309
+      }
+    },
+    "B07_magnitude_15Min": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": NaN,
+        "pbo": 0.0,
+        "profit_factor": 0.5985,
+        "n": 1057
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": NaN,
+        "pbo": 0.0,
+        "profit_factor": 0.4632,
+        "n": 424
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": null,
+        "pbo": null,
+        "profit_factor": null,
+        "n": 0
+      }
+    },
+    "B07_magnitude_1Hour": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": -25.8303,
+        "pbo": 0.0,
+        "profit_factor": 0.688,
+        "n": 308
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -15.4566,
+        "pbo": 0.4087,
+        "profit_factor": 0.9288,
+        "n": 110
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": -12.3175,
+        "pbo": 0.0833,
+        "profit_factor": 0.7125,
+        "n": 63
+      }
+    },
+    "B07_magnitude_4Hour": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": -11.6181,
+        "pbo": 0.2302,
+        "profit_factor": 0.8391,
+        "n": 76
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -7.7815,
+        "pbo": 0.2302,
+        "profit_factor": 1.541,
+        "n": 41
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": -7.5558,
+        "pbo": null,
+        "profit_factor": 1.0954,
+        "n": 29
+      }
+    },
+    "B07_magnitude_5Min": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": NaN,
+        "pbo": 0.0,
+        "profit_factor": 0.3273,
+        "n": 2411
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": NaN,
+        "pbo": 0.0,
+        "profit_factor": 0.252,
+        "n": 1033
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": NaN,
+        "pbo": 0.0,
+        "profit_factor": 0.0809,
+        "n": 588
+      }
+    },
+    "B08_xsect_15Min": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": -104.8612,
+        "pbo": 0.0119,
+        "profit_factor": 0.8939,
+        "n": 3670
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -44.1133,
+        "pbo": 0.1389,
+        "profit_factor": 0.8891,
+        "n": 642
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": null,
+        "pbo": null,
+        "profit_factor": null,
+        "n": 0
+      }
+    },
+    "B08_xsect_1Hour": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": -70.8649,
+        "pbo": 0.3452,
+        "profit_factor": 0.9557,
+        "n": 1510
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -36.254,
+        "pbo": 0.3333,
+        "profit_factor": 1.085,
+        "n": 510
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": -26.0577,
+        "pbo": 0.2341,
+        "profit_factor": 1.1106,
+        "n": 259
+      }
+    },
+    "B08_xsect_4Hour": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": -35.0373,
+        "pbo": 0.2222,
+        "profit_factor": 0.8639,
+        "n": 341
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -22.1212,
+        "pbo": 0.0675,
+        "profit_factor": 1.6758,
+        "n": 124
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": -13.6724,
+        "pbo": 0.1548,
+        "profit_factor": 1.3002,
+        "n": 70
+      }
+    },
+    "B08_xsect_5Min": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": -195.1917,
+        "pbo": 0.0,
+        "profit_factor": 0.8362,
+        "n": 12748
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -105.9848,
+        "pbo": 0.0,
+        "profit_factor": 0.8666,
+        "n": 3670
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": -65.018,
+        "pbo": 0.0397,
+        "profit_factor": 0.8511,
+        "n": 1400
+      }
+    },
+    "B09_kronos_dir_15Min": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": -13.5727,
+        "pbo": 0.0,
+        "profit_factor": 1.3133,
+        "n": 188
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -10.3631,
+        "pbo": 0.0476,
+        "profit_factor": 1.4391,
+        "n": 102
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": null,
+        "pbo": null,
+        "profit_factor": null,
+        "n": 0
+      }
+    },
+    "B09_kronos_dir_1Hour": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": -5.5921,
+        "pbo": null,
+        "profit_factor": 0.3529,
+        "n": 11
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -4.2718,
+        "pbo": null,
+        "profit_factor": 2.0294,
+        "n": 11
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": -6.1786,
+        "pbo": null,
+        "profit_factor": 0.5504,
+        "n": 11
+      }
+    },
+    "B09_kronos_dir_1Hour_all23": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": -0.9406,
+        "pbo": 0.1825,
+        "profit_factor": 0.8182,
+        "n": 207
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -7.1929,
+        "pbo": 0.4444,
+        "profit_factor": 1.0594,
+        "n": 207
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": -12.059,
+        "pbo": 0.4206,
+        "profit_factor": 1.0593,
+        "n": 207
+      }
+    },
+    "B09_kronos_dir_1Hour_btc": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": -18.774,
+        "pbo": 0.4484,
+        "profit_factor": 1.0154,
+        "n": 144
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -19.4827,
+        "pbo": 0.3889,
+        "profit_factor": 0.9852,
+        "n": 144
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": -19.9747,
+        "pbo": 0.3373,
+        "profit_factor": 0.982,
+        "n": 144
+      }
+    },
+    "B09_kronos_dir_1Min_btc": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": -24.7455,
+        "pbo": 0.0,
+        "profit_factor": 0.6461,
+        "n": 259
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -31.5767,
+        "pbo": 0.0,
+        "profit_factor": 0.5348,
+        "n": 259
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": -36.9398,
+        "pbo": 0.0,
+        "profit_factor": 0.5514,
+        "n": 259
+      }
+    },
+    "B09_kronos_dir_4Hour": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": null,
+        "pbo": null,
+        "profit_factor": 0.0,
+        "n": 2
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": null,
+        "pbo": null,
+        "profit_factor": 0.0,
+        "n": 2
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": null,
+        "pbo": null,
+        "profit_factor": 2.3898,
+        "n": 2
+      }
+    },
+    "B09_kronos_dir_5Min": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": -17.2986,
+        "pbo": 0.4167,
+        "profit_factor": 0.9681,
+        "n": 269
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -18.0043,
+        "pbo": 0.4921,
+        "profit_factor": 0.9552,
+        "n": 228
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": -16.7167,
+        "pbo": 0.4405,
+        "profit_factor": 0.9146,
+        "n": 168
+      }
+    },
+    "B10_kronos_mag_15Min": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": NaN,
+        "pbo": 0.3968,
+        "profit_factor": 0.9543,
+        "n": 125
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": NaN,
+        "pbo": 0.1627,
+        "profit_factor": 1.4012,
+        "n": 125
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": NaN,
+        "pbo": 0.0,
+        "profit_factor": 0.0,
+        "n": 125
+      }
+    },
+    "B10_kronos_mag_1Hour": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": -16.2698,
+        "pbo": 0.2579,
+        "profit_factor": 0.9506,
+        "n": 105
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -17.9088,
+        "pbo": 0.0159,
+        "profit_factor": 0.8855,
+        "n": 108
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": -18.79,
+        "pbo": 0.0794,
+        "profit_factor": 0.7389,
+        "n": 108
+      }
+    },
+    "B10_kronos_mag_1Hour_all23": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": -24.3021,
+        "pbo": 0.1389,
+        "profit_factor": 0.8821,
+        "n": 477
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -28.1817,
+        "pbo": 0.1667,
+        "profit_factor": 0.9103,
+        "n": 477
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": -28.6314,
+        "pbo": 0.2698,
+        "profit_factor": 0.9397,
+        "n": 470
+      }
+    },
+    "B10_kronos_mag_1Hour_btc": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": -17.6274,
+        "pbo": 0.0,
+        "profit_factor": 0.7414,
+        "n": 144
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -18.0394,
+        "pbo": 0.3135,
+        "profit_factor": 0.877,
+        "n": 144
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": -18.4729,
+        "pbo": 0.3095,
+        "profit_factor": 0.9225,
+        "n": 144
+      }
+    },
+    "B10_kronos_mag_1Min_btc": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": -22.2706,
+        "pbo": 0.5,
+        "profit_factor": 0.9988,
+        "n": 259
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -23.4327,
+        "pbo": 0.4841,
+        "profit_factor": 0.9988,
+        "n": 259
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": -25.6125,
+        "pbo": 0.4286,
+        "profit_factor": 0.8279,
+        "n": 259
+      }
+    },
+    "B10_kronos_mag_4Hour": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": -10.4341,
+        "pbo": null,
+        "profit_factor": 0.8651,
+        "n": 33
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -11.0964,
+        "pbo": null,
+        "profit_factor": 1.3646,
+        "n": 32
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": -12.2667,
+        "pbo": null,
+        "profit_factor": 1.8063,
+        "n": 29
+      }
+    },
+    "B10_kronos_mag_5Min": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": NaN,
+        "pbo": 0.0833,
+        "profit_factor": 0.7084,
+        "n": 177
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": NaN,
+        "pbo": 0.119,
+        "profit_factor": 0.8335,
+        "n": 176
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": NaN,
+        "pbo": 0.4286,
+        "profit_factor": 1.0119,
+        "n": 178
+      }
+    },
+    "B11_kronos_finetuned_1Hour": {
+      "5": {
+        "passes": false,
+        "dsr_ratio": 0.4349,
+        "pbo": null,
+        "profit_factor": 1.1785,
+        "n": 39
+      },
+      "15": {
+        "passes": false,
+        "dsr_ratio": -2.3652,
+        "pbo": null,
+        "profit_factor": 1.3741,
+        "n": 39
+      },
+      "30": {
+        "passes": false,
+        "dsr_ratio": -5.7082,
+        "pbo": null,
+        "profit_factor": 0.7267,
+        "n": 36
+      }
+    }
+  },
+  "signals": {},
+  "note": "SHADOW research advisory \u2014 no battery has cleared the gate"
+}

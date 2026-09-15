@@ -1,0 +1,29 @@
+{
+  "battery_id": "B03_xgb_cross_asset",
+  "registered_at": "2026-07-17T14:28:58+00:00",
+  "hypothesis": "Hourly cross-asset relationship state (correlation/beta/absorption/divergence/lead-lag) plus daily regime context adds intraday triple-barrier signal beyond the per-symbol features of B02.",
+  "dataset_family": "intraday_core7_1min",
+  "horizons": [
+    5,
+    15,
+    30
+  ],
+  "model": "xgboost-cuda",
+  "param_grid": {
+    "max_depth": [
+      4,
+      6,
+      8
+    ],
+    "learning_rate": [
+      0.05,
+      0.1
+    ],
+    "min_child_weight": [
+      5,
+      50
+    ]
+  },
+  "n_trials": 36,
+  "feed": "iex"
+}

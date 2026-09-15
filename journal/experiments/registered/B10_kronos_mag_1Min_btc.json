@@ -1,0 +1,18 @@
+{
+  "battery_id": "B10_kronos_mag_1Min_btc",
+  "registered_at": "2026-07-26T18:29:56+00:00",
+  "hypothesis": "Kronos-small predicted high-low range forecasts realized excursion (mfe) on 1Min bars over BTCUSD with positive rank-IC \u2014 applying the Phase-2 finding that magnitude is the forecastable quantity.",
+  "dataset_family": "kronos_btc_1min",
+  "horizons": [
+    5,
+    15,
+    30
+  ],
+  "model": "kronos-magnitude",
+  "param_grid": {
+    "source": "kronos-small",
+    "zero_shot": true
+  },
+  "n_trials": 3,
+  "feed": "iex"
+}

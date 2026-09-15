@@ -1,0 +1,22 @@
+{
+  "battery_id": "B08_xsect_1Hour",
+  "registered_at": "2026-07-18T19:14:03+00:00",
+  "hypothesis": "On 1Hour bars, chart + cross-asset (xa_*) features rank the core-7 names cross-sectionally: a per-stamp long-top/short-bottom book has positive rank-IC and net-positive after-cost expectancy. Relative bets where the relationship features earn their keep.",
+  "dataset_family": "intraday_core7_1hour",
+  "horizons": [
+    5,
+    15,
+    30
+  ],
+  "model": "xgboost-xsect",
+  "param_grid": {
+    "xgb": {
+      "max_depth": 6,
+      "learning_rate": 0.05,
+      "min_child_weight": 50
+    },
+    "long_short_q": 0.34
+  },
+  "n_trials": 3,
+  "feed": "iex"
+}

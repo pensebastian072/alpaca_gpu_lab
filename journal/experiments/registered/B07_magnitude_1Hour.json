@@ -1,0 +1,30 @@
+{
+  "battery_id": "B07_magnitude_1Hour",
+  "registered_at": "2026-07-18T19:13:35+00:00",
+  "hypothesis": "On 1Hour bars, chart features predict the SIZE of the coming move (mfe in ATR units) with positive rank-IC, even where direction is unpredictable; concentrating a long harvester on the top-decile predicted-excursion bars improves after-cost expectancy.",
+  "dataset_family": "intraday_core7_1hour",
+  "horizons": [
+    5,
+    15,
+    30
+  ],
+  "model": "xgboost-regressor",
+  "param_grid": {
+    "grid": [
+      {
+        "max_depth": 6,
+        "learning_rate": 0.05,
+        "min_child_weight": 50
+      },
+      {
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "min_child_weight": 50
+      }
+    ],
+    "target": "mfe",
+    "accept": "rank"
+  },
+  "n_trials": 6,
+  "feed": "iex"
+}
