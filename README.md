@@ -1,5 +1,13 @@
 # alpaca_gpu_lab
 
+<!-- one-tap-install -->
+[![Download ZIP](https://img.shields.io/badge/Download-ZIP-2ea44f?style=for-the-badge&logo=github)](https://github.com/pensebastian072/alpaca_gpu_lab/archive/refs/heads/main.zip)
+
+**Run it on your computer in 3 steps:** 1) [download the ZIP](https://github.com/pensebastian072/alpaca_gpu_lab/archive/refs/heads/main.zip) · 2) unzip it · 3) double-click **`install.bat`** (Windows) or run **`./install.sh`** (macOS/Linux).
+The dashboard opens in your browser at `http://127.0.0.1:8101` - it runs only on your machine. Next time use `start.bat` / `./start.sh`.
+For the full research stack (large downloads) use `install.bat --full` / `./install.sh --full`.
+<!-- one-tap-install -->
+
 Standalone GPU **alpha-research bench** over a 22-asset macro universe (ETF
 proxies + BTC via Alpaca). Finds signals, patterns, and cross-asset
 relationships (positive and negative correlations) behind the canonical
